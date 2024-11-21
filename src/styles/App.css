@@ -1,0 +1,111 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin: 0;
+  background-color: #f5930b;
+  text-align: center;
+}
+
+input,
+button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input {
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+button {
+  background-color: #f5930b;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #f5b70b;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+span {
+  flex-grow: 1;
+  text-align: left;
+}
+
+button.concluir {
+  background-color: #28a745;
+  margin-right: 5px;
+}
+
+button.concluir:hover {
+  background-color: #218838;
+}
+
+button.remover {
+  background-color: #dc3545;
+}
+
+button.remover:hover {
+  background-color: #c82333;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Estilização do contêiner de navegação */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 10px; /* Espaçamento entre os itens */
+  justify-content: center;
+}
+
+nav li {
+  display: inline;
+}
+
+/* Estilização dos links como botões */
+nav li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 15px;
+  background-color: #f5930b;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+}
+
+/* Efeito de hover para os links */
+nav li a:hover {
+  background-color: #f5af0b;
+}
